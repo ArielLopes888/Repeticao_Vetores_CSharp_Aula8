@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace aula8
 {
-    public class listaDeFIlmes
+    public class Filmes
     {
         String[] listaDeFilmes = { "Clube dos Cinco", "A Hora do Pesadelo", "Karatê Kid", "Rocky IV", "Conan", "o Bárbaro", "Highlander" };
 
@@ -64,11 +64,11 @@ namespace aula8
         }
     }
 
-    internal class Program
+    internal class Program : Filmes
     {
         static void Main(string[] args)
         {
-            listaDeFIlmes listaDeFIlmes = new listaDeFIlmes();
+            Filmes listaDeFIlmes = new Filmes();
             
 
             // Retorna Clube dos Cinco; A Hora do Pesadelo; Karatê Kid; Rocky IV; Conan, o Bárbaro; Highlander

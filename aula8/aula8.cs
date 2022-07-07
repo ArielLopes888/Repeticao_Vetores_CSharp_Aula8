@@ -68,33 +68,33 @@ namespace aula8
     {
         static void Main(string[] args)
         {
-            Filmes listaDeFIlmes = new Filmes();
+            Filmes filmes = new Filmes();
             
 
             // Retorna Clube dos Cinco; A Hora do Pesadelo; Karatê Kid; Rocky IV; Conan, o Bárbaro; Highlander
 
 
-            Console.WriteLine($"1. Lista de todos os filmes separados por ponto e vírgula: {listaDeFIlmes.apresentaTodosOsFilmesSeparadosPorPontoVirgula()}");
+            Console.WriteLine($"1. Lista de todos os filmes separados por ponto e vírgula: {filmes.apresentaTodosOsFilmesSeparadosPorPontoVirgula()}");
 
 
             // Retorna o número 7.
 
-            Console.WriteLine($"2. Quantidade de filmes da lista: {listaDeFIlmes.quantidadeTotalDeFilmes()} ");
+            Console.WriteLine($"2. Quantidade de filmes da lista: {filmes.quantidadeTotalDeFilmes()} ");
 
 
             // Se o índice for 0, retorna Clube dos Cinco;
 
-            Console.WriteLine($"3. Filme por indice: {listaDeFIlmes.buscarNomeDoFilmePeloIndice(0)}");
+            Console.WriteLine($"3. Filme por indice: {filmes.buscarNomeDoFilmePeloIndice(0)}");
 
 
             // Se o filme for Sexta-feira 13th, retorna Clube dos Cinco; A Hora do Pesadelo; Karatê Kid; Rocky IV; Conan, o Bárbaro; Highlander, Sexta-feira 13th
 
-            Console.WriteLine($"4. Adiciona um filme pelo nome: {listaDeFIlmes.adicionaUmNovoFilmePeloSeuNome("Sexta-feira 13th")}");
+            Console.WriteLine($"4. Adiciona um filme pelo nome: {filmes.adicionaUmNovoFilmePeloSeuNome("Sexta-feira 13th")}");
 
 
             // Se o índice for 3 e o nome for atualizado para Velozes e Furiosos, retorna Clube dos Cinco; A Hora do Pesadelo; Karatê Kid; Velozes e Furiosos; Conan, o Bárbaro; Highlander, Sexta-feira 13th
 
-            Console.WriteLine($"5. Atualizar um filme pelo seu índice: {listaDeFIlmes.atualizarUmFilmePeloSeuIndice(3, "Velozes e Furiosos")}");
+            Console.WriteLine($"5. Atualizar um filme pelo seu índice: {filmes.atualizarUmFilmePeloSeuIndice(3, "Velozes e Furiosos")}");
 
 
             // Retorna 
@@ -113,7 +113,7 @@ namespace aula8
 
             // 6 - Sexta-feira 13th
 
-            Console.WriteLine($"6. Listar todos os filmes com seu indice/posicao na lista. {listaDeFIlmes.listarTodosOsFilmesComSeuIndiceNaLista()}");
+            Console.WriteLine($"6. Listar todos os filmes com seu indice/posicao na lista. {filmes.listarTodosOsFilmesComSeuIndiceNaLista()}");
 
         }
     }   
